@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
 
 * {
   padding: 0;
@@ -6,26 +6,52 @@
   box-sizing: border-box;
 }
 
-html,
 body {
-  width: 100%;
-  height: 100%;
-  font-family: "Montserrat";
   line-height: 1.6;
-}
-
-.coming-soon-container {
-  background-color: #191919;
+  font-family: "Karla";
   width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  background: #eee;
 }
 
-.coming-soon-title {
+.coming-soon {
+  max-width: 700px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.page-title {
   font-size: 5rem;
-  font-weight: 900;
-  color: #fe019a;
-  text-shadow: 1px 2px 5px rgb(168, 168, 168);
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.inner-flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+h3[class^="time-"] {
+  font-size: 2.3rem;
+  font-weight: 700;
+}
+
+.time-container {
+  width: 150px;
+  padding: 8px 20px;
+  border: 1px solid #ddd;
+  background-color: #f4f4f4;
+  border-radius: 10px;
 }
